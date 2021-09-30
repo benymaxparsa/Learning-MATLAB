@@ -115,3 +115,26 @@ multiline comment
 % vec3([2 4 6])
 
 
+% vecRow = [2;3;4]
+% vecCol = [1 2 3]
+% vecMult = vecRow * vecCol
+
+% vec1 = [1 2 3]
+% vec2 = [4 5 6]
+
+% vecDotP = vec1 * vec2'
+% vecDotP2 = dot(vec1, vec2)
+
+% vecCross = cross(vec1, vec2)
+
+% vec = linspace(1, 20, 4)
+
+% vec = logspace(1, 3, 3)
+
+m1 = [2 3 4; 4 6 8]
+mNumRowVal = length(m1)
+mNumVal = numel(m1)
+mSize = size(m1)
+[nRows, nCols] = size(m1)
+
+
