@@ -232,7 +232,4 @@ rot90(m3)
 rot90(m3, 2)
 reshape(m3, 2, 6)
 repmat(m3, 2, 1)
-repelem(m3, 2, 2)
-
-
-
+r
