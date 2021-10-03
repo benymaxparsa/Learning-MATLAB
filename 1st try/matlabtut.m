@@ -98,7 +98,6 @@ multiline comment
 %     disp("stay home");
 % end
 
-
 % vec1 = [5, 3, 2, 1];
 % vl = length(vec1)
 % vec2 = sort(vec1)
@@ -113,7 +112,6 @@ multiline comment
 % vec3(11) = 33
 % vec3(1:3)
 % vec3([2 4 6])
-
 
 % vecRow = [2;3;4]
 % vecCol = [1 2 3]
@@ -131,10 +129,68 @@ multiline comment
 
 % vec = logspace(1, 3, 3)
 
-m1 = [2 3 4; 4 6 8]
-mNumRowVal = length(m1)
-mNumVal = numel(m1)
-mSize = size(m1)
-[nRows, nCols] = size(m1)
+% m1 = [2 3 4; 4 6 8]
+% mNumRowVal = length(m1)
+% mNumVal = numel(m1)
+% mSize = size(m1)
+% [nRows, nCols] = size(m1)
+
+% m2 = randi([10, 20], 3)
+
+% m2(1, 2) = 22
+% m2(1,:) = 25
+% m2(:, 1) = 36
+% mLD = m2(end, 1)
+% mRU = m2(1, end)
+% mLU = m2(1, 1)
+% mRD = m2(end, end)
+
+% m2(:, 2) = []
+
+% for i = 1:10
+%     disp(i)
+% end
+
+% for i = 10:-1:0
+%     disp(i)
+% end
+
+% for i = [2 3 4]
+%     disp(i)
+% end
+
+% m = [2 3 4; 4 6 8]
+
+% for i = 1:2
+%     for j = 1:3
+%         disp(m(i,j));
+%     end
+% end
+
+% IVect = [6 7 8]
+% for i = 1:length(IVect)
+%     disp(IVect(i));
+% end
+
+i = 1;
+
+while i < 20
+
+    if (mod(i, 2)) == 0
+        disp(i);
+        i = i + 1;
+        continue;
+    end
+
+    i = i + 1;
+
+    if i >= 10
+        break;
+    end
+
+end
+
+
+
 
 
