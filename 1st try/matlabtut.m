@@ -299,29 +299,61 @@ multiline comment
 % disp(customers(2).name)
 
 
-name = {'Jim'; 'Pam'; 'Dwight'};
-age = [28; 27; 31];
-salary = [35000; 26000; 75000];
-id = {'1', '2', '3'};
+% name = {'Jim'; 'Pam'; 'Dwight'};
+% age = [28; 27; 31];
+% salary = [35000; 26000; 75000];
+% id = {'1', '2', '3'};
 
-employees = table(name, age, salary, ...
-    'RowName', id)
+% employees = table(name, age, salary, ...
+%     'RowName', id)
 
-meanSalary = mean(employees.salary)
-employees.vDays = [10; 14; 16];
-employees({'1', '2'}, :)
-employees(ismember(employees.name, {'Jim' 'Dwight'}), :)
+% meanSalary = mean(employees.salary)
+% employees.vDays = [10; 14; 16];
+% employees({'1', '2'}, :)
+% employees(ismember(employees.name, {'Jim' 'Dwight'}), :)
 
 
-randM = randi([10, 50], 8)
-save sampdata1.dat randM -ascii
-load sampdata1.dat
-disp sampdata1
-type sampdata1.dat
+% randM = randi([10, 50], 8)
+% save sampdata1.dat randM -ascii
+% load sampdata1.dat
+% disp sampdata1
+% type sampdata1.dat
 
-save myData1
-load myData1
-who
-v4 = 123
-save -append myData1 v4
+% save myData1
+% load myData1
+% who
+% v4 = 123
+% save -append myData1 v4
+
+% cylinderVol(20, 30)
+
+% function vol = cylinderVol(radius, height)
+% vol = pi * radius^2 * height;
+% end
+
+% [coneV, cylVol] = getVols(10, 20)
+
+% function [coneVol, cylinVol] = getVols(radius, height)
+% cylinVol = pi * radius^2 * height;
+% coneVol = 1/3 * cylinVol;
+% end
+
+% theSum = getSum(1, 2, 3, 4)
+
+% function sum = getSum(varargin)
+% sum = 0;
+% for k = 1:length(varargin)
+%     sum = sum + varargin{k}(1);
+% end
+% end
+
+
+listOfNums = getNumbers(10)
+
+function [varargout] = getNumbers(howMany)
+for k = 1:howMany
+    varargout{1}(k) = k;
+end
+end
+
 
