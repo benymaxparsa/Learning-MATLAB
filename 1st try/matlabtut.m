@@ -348,11 +348,44 @@ multiline comment
 % end
 
 
-listOfNums = getNumbers(10)
+% listOfNums = getNumbers(10)
 
-function [varargout] = getNumbers(howMany)
-for k = 1:howMany
-    varargout{1}(k) = k;
+% function [varargout] = getNumbers(howMany)
+% for k = 1:howMany
+%     varargout{1}(k) = k;
+% end
+% end
+
+
+% cubeVol = @ (l, w, h) l * w * h;
+% cV = cubeVol(2, 2, 2)
+
+
+% mult3 = @ (x) x * 3;
+% sol = doMath(mult3, 4)
+
+% function sol = doMath(func, num)
+% sol = func(num);
+% end
+
+
+% mult4 = doMath2(4);
+% sol2 = mult4(5)
+
+% function func = doMath2(num)
+% func = @(x) x * num;
+% end
+
+% toExecute = sprintf("total = %d + %d", 5, 4)
+% eval(toExecute)
+
+factorial(4)
+
+function val = factorial(num)
+if num == 1
+    val = 1;
+else
+    val = num * factorial(num - 1);
 end
 end
 
