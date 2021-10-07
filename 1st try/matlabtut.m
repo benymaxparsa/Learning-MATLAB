@@ -235,7 +235,7 @@ multiline comment
 % repelem(m3, 2, 2)
 
 
-ca1 = {"doug smith", 34, [25 8 19]}
+% ca1 = {"doug smith", 34, [25 8 19]}
 % ca2 = cell(5)
 % ca3 = cell([1 5])
 % ca4 = cell([5 1])
@@ -249,8 +249,37 @@ ca1 = {"doug smith", 34, [25 8 19]}
 %     disp(ca1{i})
 % end
 
-ca3 = {'doug' 'patty'}
-nameMat = char(ca3)
-ca4 = cellstr(nameMat)
+% ca3 = {'doug' 'patty'}
+% nameMat = char(ca3)
+% ca4 = cellstr(nameMat)
+
+
+str1 = 'I am a string'
+length(str1)
+str1(1)
+str1(3:4)
+str2 = strcat(str1, ' that''s longer')
+strfind(str2, 'a')
+strrep(str2, 'longer', 'bigger')
+% strArray = strsplit(str1, ' ')
+% class(strArray)
+% strArray(1)
+% strArray
+
+% nStr = int2str(99)
+% fStr = num2str(3.14)
+% strcmp(str1, str2)
+
+% isletter('num 2')
+% isstrprop('word2', 'alpha')
+% isstrprop('word2', 'alphanum')
+
+ischar('some words 2')
+sort(str1)
+sort(str1, 'descend')
+strtrim(str1)
+lower(str1)
+upper(str1)
+
 
 
