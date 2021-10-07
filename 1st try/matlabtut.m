@@ -282,20 +282,46 @@ multiline comment
 % upper(str1)
 
 
-dougSmith = struct('name', 'Doug Smith', 'age', 34, ...
-    'purchases', [12 23])
+% dougSmith = struct('name', 'Doug Smith', 'age', 34, ...
+%     'purchases', [12 23])
 
-disp(dougSmith.age)
-dougSmith.wife = 'Patty Smith'
-dougSmith = rmfield(dougSmith, 'wife')
-isfield(dougSmith, 'wife')
-fieldnames(dougSmith)
-customers(1) = dougSmith
-sallySmith = struct('name', 'Sally Smith', 'age', 34, ...
-    'purchases', [12 23])
-customers(2) = sallySmith
+% disp(dougSmith.age)
+% dougSmith.wife = 'Patty Smith'
+% dougSmith = rmfield(dougSmith, 'wife')
+% isfield(dougSmith, 'wife')
+% fieldnames(dougSmith)
+% customers(1) = dougSmith
+% sallySmith = struct('name', 'Sally Smith', 'age', 34, ...
+%     'purchases', [12 23])
+% customers(2) = sallySmith
 
-disp(customers)
-disp(customers(2).name)
+% disp(customers)
+% disp(customers(2).name)
 
+
+name = {'Jim'; 'Pam'; 'Dwight'};
+age = [28; 27; 31];
+salary = [35000; 26000; 75000];
+id = {'1', '2', '3'};
+
+employees = table(name, age, salary, ...
+    'RowName', id)
+
+meanSalary = mean(employees.salary)
+employees.vDays = [10; 14; 16];
+employees({'1', '2'}, :)
+employees(ismember(employees.name, {'Jim' 'Dwight'}), :)
+
+
+randM = randi([10, 50], 8)
+save sampdata1.dat randM -ascii
+load sampdata1.dat
+disp sampdata1
+type sampdata1.dat
+
+save myData1
+load myData1
+who
+v4 = 123
+save -append myData1 v4
 
