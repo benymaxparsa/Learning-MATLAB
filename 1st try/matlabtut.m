@@ -194,9 +194,9 @@ multiline comment
 % end
 
 
-m3 = [2 3 4; 4 6 8; 8 12 16; 16 24 32]
-m4 = [1:3; 4:6]
-m5 = [2:4; 5:7]
+% m3 = [2 3 4; 4 6 8; 8 12 16; 16 24 32]
+% m4 = [1:3; 4:6]
+% m5 = [2:4; 5:7]
 
 % m4 + m5
 % m4 .* m5
@@ -206,12 +206,12 @@ m5 = [2:4; 5:7]
 
 % sum(m3)
 
-m6 = [1 2 3;
-    4 5 6]
+% m6 = [1 2 3;
+%     4 5 6]
 
-m7 = [1 1 1 1;
-    2 2 2 2;
-    3 3 3 3]
+% m7 = [1 1 1 1;
+%     2 2 2 2;
+%     3 3 3 3]
 
 % m8 = m6 * m7
 
@@ -226,13 +226,31 @@ m7 = [1 1 1 1;
 % cumsum(m3)
 % cumprod(m3)
 
-fliplr(m3)
-flipud(m3)
-rot90(m3)
-rot90(m3, 2)
-reshape(m3, 2, 6)
-repmat(m3, 2, 1)
-repelem(m3, 2, 2)
+% fliplr(m3)
+% flipud(m3)
+% rot90(m3)
+% rot90(m3, 2)
+% reshape(m3, 2, 6)
+% repmat(m3, 2, 1)
+% repelem(m3, 2, 2)
 
+
+ca1 = {"doug smith", 34, [25 8 19]}
+% ca2 = cell(5)
+% ca3 = cell([1 5])
+% ca4 = cell([5 1])
+
+% ca1{1}
+% ca1{3}(2)
+% ca1{4} = "patty smith"
+% length(ca1)
+% ca1(4) = []
+% for i = 1:length(ca1)
+%     disp(ca1{i})
+% end
+
+ca3 = {'doug' 'patty'}
+nameMat = char(ca3)
+ca4 = cellstr(nameMat)
 
 
