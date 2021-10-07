@@ -254,13 +254,13 @@ multiline comment
 % ca4 = cellstr(nameMat)
 
 
-str1 = 'I am a string'
-length(str1)
-str1(1)
-str1(3:4)
-str2 = strcat(str1, ' that''s longer')
-strfind(str2, 'a')
-strrep(str2, 'longer', 'bigger')
+% str1 = 'I am a string'
+% length(str1)
+% str1(1)
+% str1(3:4)
+% str2 = strcat(str1, ' that''s longer')
+% strfind(str2, 'a')
+% strrep(str2, 'longer', 'bigger')
 % strArray = strsplit(str1, ' ')
 % class(strArray)
 % strArray(1)
@@ -274,12 +274,28 @@ strrep(str2, 'longer', 'bigger')
 % isstrprop('word2', 'alpha')
 % isstrprop('word2', 'alphanum')
 
-ischar('some words 2')
-sort(str1)
-sort(str1, 'descend')
-strtrim(str1)
-lower(str1)
-upper(str1)
+% ischar('some words 2')
+% sort(str1)
+% sort(str1, 'descend')
+% strtrim(str1)
+% lower(str1)
+% upper(str1)
 
+
+dougSmith = struct('name', 'Doug Smith', 'age', 34, ...
+    'purchases', [12 23])
+
+disp(dougSmith.age)
+dougSmith.wife = 'Patty Smith'
+dougSmith = rmfield(dougSmith, 'wife')
+isfield(dougSmith, 'wife')
+fieldnames(dougSmith)
+customers(1) = dougSmith
+sallySmith = struct('name', 'Sally Smith', 'age', 34, ...
+    'purchases', [12 23])
+customers(2) = sallySmith
+
+disp(customers)
+disp(customers(2).name)
 
 
